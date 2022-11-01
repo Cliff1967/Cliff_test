@@ -123,3 +123,17 @@ a {
     padding-left: 0;
   }
 }
+/*-----ICONS-----*/
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--green {
+  fill: var(--color-ix-green);
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon--secondary {
+  fill: var(--color-secondary);
+}
