@@ -15,12 +15,25 @@
     <link rel="stylesheet" href="css/Styles.css" />
   </head>
   <body>
-    <!--Buttons-->
-    <button class="btn btn--primary">Buy Now</button>
-    <button class="btn btn--secondary">Don't buy</button>
-    <button class="btn btn--accent">Whats Up</button>
-    <a href="#" class="btn btn--accent btn--block">Another one</a>
-    <button class="btn btn--outline">Block Button</button>
+    <!--INPUTS Compenent-->
+    <div class="input-group">
+      <!-- <button class="btn btn--accent">Search</button> -->
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#wordpress">Computer</use>
+        </svg>
+      </span>
+       <input type="text" class="input" placeholder="Enter Domain Name Here" /> 
+    </div>
+
+
+      <!--Buttons-->
+      <button class="btn btn--primary">Buy Now</button>
+      <button class="btn btn--secondary">Don't buy</button>
+      <button class="btn btn--accent">Whats Up</button>
+      <a href="#" class="btn btn--accent btn--block">Another one</a>
+      <button class="btn btn--outline">Block Button</button>
+    </div>
     <!---Icons-->
     <span class="icon-container">
       <svg class="icon icon--green">
@@ -32,18 +45,20 @@
         <use xlink:href="images/sprite.svg#clock"></use>
       </svg>
     </span>
-    <!--Lists in line-->
-    <ul class="list list--inline">
-      <li class="list__item">Item 1</li>
-      <li class="list__item">Item 2</li>
-      <li class="list__item">Item 3</li>
-    </ul>
-    <!--Lists with ticks-->
-    <ul class="list list--tick">
-      <li class="list__item">Item 4</li>
-      <li class="list__item">Item 5</li>
-      <li class="list__item">Item 6</li>
-    </ul>
+    <div>
+      <!--Lists in line-->
+      <ul class="list list--inline">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">Item 2</li>
+        <li class="list__item">Item 3</li>
+      </ul>
+      <!--Lists with ticks-->
+      <ul class="list list--tick">
+        <li class="list__item">Item 4</li>
+        <li class="list__item">Item 5</li>
+        <li class="list__item">Item 6</li>
+      </ul>
+    </div>
     <!--Links -->
     <a href="#" class="link-arrow">Learn More</a>
     <!--Badges different sizes-->
