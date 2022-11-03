@@ -260,6 +260,9 @@ a {
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
+.card--primary .badge--primary {
+  background: #1771e6;
+}
 /*-----PLANS-----*/
 
 .plan__name {
@@ -312,4 +315,17 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
+}
+/*-----MEDIA-----*/
+.media {
+  display: flex;
+}
+.media__body {
+  padding: 0 2rem;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__image {
+  margin-top: 1rem;
 }
