@@ -15,36 +15,160 @@
     <link rel="stylesheet" href="css/Styles.css" />
   </head>
   <body>
-<!--CALLOUTS-->
-<div class="callout callout--primary">
-  <div class="grid grid--1x2">
-    <div class="callout__content">
-      <h2 class="callout__heading">Ready to get Started?</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat voluptas quas 
-        distinctio porro quia, illum nostrum cum odit! Error, ullam.</p>
-    </div>
-    <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
-  </div>
-</div>
-<p>-----</p>
 
-<!--Testimonials-->
-<div class="card testimonial">
-  <div class="grid grid--1x2">
-    <div class="testimonial__image">
-            <img src="../images/legoman.jpg" alt="A happy smiling gringo">
-      <span class="icon-container icon-container--accent">
-          <svg class="icon icon--white icon--small">
-          <use xlink:href="images/sprite.svg#quotes"></use>
-          </svg>
-      </span>
+
+    
+    <!--COLLAPSIBLES-->
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
+        <svg class="icon icon--white collapsible__chevron">
+          <use xlink:href="images/sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quos.
+      </div>
     </div>
-    <div><blockquote class="quote">
+    <div class="collapsible collapsible--expand">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 2</h2>
+        <svg class="icon icon--white collapsible__chevron">
+          <use xlink:href="images/sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sequi excepturi error dignissimos eaque nobis!.
+      </div>
+    </div>
+    <p>-------</p>
+
+    <!--CALLOUTS-->
+    <div class="callout callout--primary">
+      <div class="grid grid--1x2">
+        <div class="callout__content">
+          <h2 class="callout__heading">Ready to get Started?</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+            voluptas quas distinctio porro quia, illum nostrum cum odit! Error,
+            ullam.
+          </p>
+        </div>
+        <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+      </div>
+    </div>
+    <p>-----</p>
+
+    <!--Testimonials-->
+    <div class="card testimonial">
+      <div class="grid grid--1x2">
+        <div class="testimonial__image">
+          <img src="../images/legoman.jpg" alt="A happy smiling gringo" />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <div>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+              dolor natus voluptatibus non beatae molestiae a reprehenderit,
+              doloribus autem, rem quas quaerat nisi cum est at sapiente totam
+              esse minus ullam architecto officiis vitae officia.
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__image">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Clifford Evans</h3>
+                  <p class="quote__company">
+                    Head of Technical Support - iX Cameras Ltd
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <p>----</p>
+    <!--GRID Compontents-->
+    <div class="grid grid--1x3">
+      <!--this lot is just to show the grid works can be replaced with anything-->
+      <div class="plan plan--popular">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">£14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">10% Off</span>
+            <span class="plan__description">Easy start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100GB SSD Storage</li>
+              <li class="list__item">3Gb RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now!</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan">
+        <div class="card card--primary">
+          <header class="card__header">
+            <h3 class="plan__name">Premier</h3>
+            <span class="plan__price">£24</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--primary badge--small">15% Off</span>
+            <span class="plan__description">Hard start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">More Unlimited websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100GB SSD Storage</li>
+              <li class="list__item">3Gb RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now!</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">another offer</h3>
+            <span class="plan__price">£34</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--primary badge--small">20% Off</span>
+            <span class="plan__description">Full cloud cover</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">1TB SSD Storage</li>
+              <li class="list__item">16Gb RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--QUOTE Components-->
+    <blockquote class="quote">
       <p class="quote__text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dolor
-        natus voluptatibus non beatae molestiae a reprehenderit, doloribus autem,
-        rem quas quaerat nisi cum est at sapiente totam esse minus ullam architecto
-        officiis vitae officia.
+        natus voluptatibus non beatae molestiae a reprehenderit, doloribus
+        autem, rem quas quaerat nisi cum est at sapiente totam esse minus ullam
+        architecto officiis vitae officia.
       </p>
       <footer>
         <div class="media">
@@ -55,140 +179,56 @@
           </div>
           <div class="media__body">
             <h3 class="media__title quote__author">Clifford Evans</h3>
-            <p class="quote__company">Head of Technical Support - iX Cameras Ltd</p>
+            <p class="quote__company">
+              Head of Technical Support - iX Cameras Ltd
+            </p>
           </div>
         </div>
       </footer>
     </blockquote>
-    </div>
-  </div>
-</div>
-<p>----</p>
-<!--GRID Compontents-->
-  <div class="grid grid--1x3">
-  <!--this lot is just to show the grid works can be replaced with anything-->
-  <div class="plan plan--popular">
-    <div class="card card--secondary">
-      <header class="card__header">
-        <h3 class="plan__name">Entry</h3>
-        <span class="plan__price">£14</span>
-        <span class="plan__billing-cycle">/month</span>
-        <span class="badge badge--secondary badge--small">10% Off</span>
-        <span class="plan__description">Easy start on the cloud</span>
-      </header>
-      <div class="card__body">
-        <ul class="list list--tick">
-          <li class="list__item">Unlimited websites</li>
-          <li class="list__item">Unlimited Bandwidth</li>
-          <li class="list__item">100GB SSD Storage</li>
-          <li class="list__item">3Gb RAM</li>
-        </ul>
-        <button class="btn btn--outline btn--block">Buy Now!</button>
-      </div>
-    </div>
-  </div>
-  <div class="plan">
-    <div class="card card--primary">
-      <header class="card__header">
-        <h3 class="plan__name">Premier</h3>
-        <span class="plan__price">£24</span>
-        <span class="plan__billing-cycle">/month</span>
-        <span class="badge badge--primary badge--small">15% Off</span>
-        <span class="plan__description">Hard start on the cloud</span>
-      </header>
-      <div class="card__body">
-        <ul class="list list--tick">
-          <li class="list__item"> More Unlimited websites</li>
-          <li class="list__item">Unlimited Bandwidth</li>
-          <li class="list__item">100GB SSD Storage</li>
-          <li class="list__item">3Gb RAM</li>
-        </ul>
-        <button class="btn btn--outline btn--block">Buy Now!</button>
-      </div>
-    </div>
-  </div>
-  <div class="plan">
-    <div class="card card--secondary">
-      <header class="card__header">
-        <h3 class="plan__name">another offer</h3>
-        <span class="plan__price">£34</span>
-        <span class="plan__billing-cycle">/month</span>
-        <span class="badge badge--primary badge--small">20% Off</span>
-        <span class="plan__description">Full cloud cover</span>
-      </header>
-      <div class="card__body">
-        <ul class="list list--tick">
-          <li class="list__item">Unlimited websites</li>
-          <li class="list__item">Unlimited Bandwidth</li>
-          <li class="list__item">1TB SSD Storage</li>
-          <li class="list__item">16Gb RAM</li>
-        </ul>
-        <button class="btn btn--outline btn--block">Buy Now!</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!--QUOTE Components-->
-<blockquote class="quote">
-  <p class="quote__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dolor natus voluptatibus non beatae molestiae a reprehenderit, doloribus autem, rem quas quaerat nisi cum est at sapiente totam esse minus ullam architecto officiis vitae officia.</p>
-  <footer>
+
+    <!--Media Components-->
     <div class="media">
       <div class="media__image">
-        <svg class="icon icon--primary quote__image">
-          <use xlink:href="images/sprite.svg#line"></use>
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#easy"></use>
         </svg>
       </div>
       <div class="media__body">
-        <h3 class="media__title quote__author">Clifford Evans</h3>
-        <p class="quote__company">
-          Head of Technical Support - iX Cameras Ltd
+        <h3 class="media__title">Easy Start & Managed Updates</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          officia tempora dolore earum iste sequi eaque. Similique voluptas
+          alias rem cupiditate consequuntur ipsam eius minima!
         </p>
       </div>
     </div>
-  </footer>
-</blockquote>
-
-<!--Media Components-->
-<div class="media">
-  <div class="media__image">
-    <svg class="icon icon--primary">
-      <use xlink:href="images/sprite.svg#easy"></use>
-    </svg>
   </div>
-  <div class="media__body">
-    <h3 class="media__title">Easy Start & Managed Updates</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officia tempora dolore earum iste sequi eaque. Similique voluptas alias rem cupiditate consequuntur ipsam eius minima!</p>
-  </div>
-</div>
-
-
-
     <!--CARD Components-->
-
-  <div style="width:35%; padding: 5px">
-    <div class="plan plan--popular">
-    <div class="card card--secondary">
-      <header class="card__header">
-        <h3 class="plan__name">Entry</h3>
-        <span class="plan__price">£14</span>
-        <span class="plan__billing-cycle">/month</span>
-        <span class="badge badge--secondary badge--small">10% Off</span>
-        <span class="plan__description">Easy start on the cloud</span>
-      </header>
-      <div class="card__body">
-        <ul class="list list--tick">
-          <li class="list__item">Unlimited websites</li>
-          <li class="list__item">Unlimited Bandwidth</li>
-          <li class="list__item">100GB SSD Storage</li>
-          <li class="list__item">3Gb RAM</li>
-        </ul>
-        <button class="btn btn--outline btn--block">Buy Now!</button>
+    <div style="width: 35%; padding: 5px">
+      <div class="plan plan--popular">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">£14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">10% Off</span>
+            <span class="plan__description">Easy start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100GB SSD Storage</li>
+              <li class="list__item">3Gb RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now!</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div><p>---</p></div>
+    <div><p>---</p></div>
     <!--INPUTS Compenent-->
     <div class="input-group">
       <!-- <button class="btn btn--accent">Search</button> -->
@@ -197,17 +237,16 @@
           <use xlink:href="images/sprite.svg#wordpress">Computer</use>
         </svg>
       </span>
-       <input type="text" class="input" placeholder="Enter Domain Name Here" /> 
+      <input type="text" class="input" placeholder="Enter Domain Name Here" />
     </div>
+  </div>
+    <!--Buttons-->
+    <button class="btn btn--primary">Buy Now</button>
+    <button class="btn btn--secondary">Don't buy</button>
+    <button class="btn btn--accent">Whats Up</button>
+    <a href="#" class="btn btn--accent btn--block">Another one</a>
+    <button class="btn btn--outline">Block Button</button>
 
-
-      <!--Buttons-->
-      <button class="btn btn--primary">Buy Now</button>
-      <button class="btn btn--secondary">Don't buy</button>
-      <button class="btn btn--accent">Whats Up</button>
-      <a href="#" class="btn btn--accent btn--block">Another one</a>
-      <button class="btn btn--outline">Block Button</button>
-    </div>
     <!---Icons-->
     <span class="icon-container">
       <svg class="icon icon--green">
@@ -219,6 +258,7 @@
         <use xlink:href="images/sprite.svg#clock"></use>
       </svg>
     </span>
+
     <div>
       <!--Lists in line-->
       <ul class="list list--inline">
@@ -239,5 +279,7 @@
     <span class="badge badge--primary">10% Off</span>
     <span class="badge badge--secondary badge--small">15% Off</span>
     <span class="badge badge--primary badge--small">BOGOF</span>
+       <!--this should be at the very end of the body section-->
+       <script src="/js/main.js"></script>
   </body>
 </html>
