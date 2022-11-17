@@ -776,7 +776,7 @@ a {
   background: #232323;
 }
 .footer__section {
-  padding: 2rem;
+  padding: 1.7rem;
   border-bottom: 1px solid#393939;
 }
 .footer__section .list {
@@ -785,7 +785,7 @@ a {
 }
 .footer__heading {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .footer__brand {
@@ -810,7 +810,7 @@ a {
   color: #fff;
 }
 .footer .list {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .footer__sections {
@@ -837,7 +837,8 @@ a {
     font-size: 1.6rem;
   }
   .footer__section .list {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
   }
   .footer .container {
     max-width: 1400px;
