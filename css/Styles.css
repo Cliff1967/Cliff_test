@@ -1,6 +1,6 @@
 /*Don't repeat yourself*/
 /*-----TYPOGRAPHY----- */
-::selection {
+@import "./normalize.css": : selection {
   background: var(--color-accent);
   color: #fff;
 }
@@ -776,7 +776,7 @@ a {
   background: #232323;
 }
 .footer__section {
-  padding: 1.7rem;
+  padding: 2rem;
   border-bottom: 1px solid#393939;
 }
 .footer__section .list {
@@ -785,7 +785,7 @@ a {
 }
 .footer__heading {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 .footer__brand {

@@ -18,7 +18,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/Styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
@@ -169,7 +168,12 @@
       </header>
       <!--Search bit-->
       <div class="input-group">
-        <input type="text" class="input" placeholder="Enter Domain Name Here" />
+        <input
+          aria-label="Domain"
+          type="text"
+          class="input"
+          placeholder="Enter Domain Name Here"
+        />
         <button class="btn btn--accent">
           <svg class="icon icon--white">
             <use href="images/sprite.svg#search"></use>
