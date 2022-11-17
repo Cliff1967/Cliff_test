@@ -1,13 +1,7 @@
 /*Don't repeat yourself*/
 /*-----TYPOGRAPHY----- */
-@import "./normalize.css": : selection {
-  background: var(--color-accent);
-  color: #fff;
-}
-html {
-  font-size: 62.5%;
-}
-:root {
+@import "./normalize.css";
+:root  {
   --color-accent: #ff3400;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
@@ -18,6 +12,14 @@ html {
   --color-secondary: #00d9ff;
   --border-radius: 30px;
 }
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
+html {
+  font-size: 62.5%;
+}
+
 *,
 *::after,
 *::before {
