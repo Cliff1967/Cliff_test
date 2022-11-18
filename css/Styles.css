@@ -1,7 +1,7 @@
 /*Don't repeat yourself*/
 /*-----TYPOGRAPHY----- */
 @import "./normalize.css";
-:root  {
+:root {
   --color-accent: #ff3400;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
@@ -197,6 +197,10 @@ a {
   height: 2rem;
   margin-right: 1rem;
   vertical-align: middle;
+}
+.btn--green {
+  background: var(--color-ix-green);
+  color: #000;
 }
 .btn--primary {
   background: var(--color-primary);
@@ -423,6 +427,12 @@ a {
 }
 .grid .plan {
   padding: 5px;
+}
+.grid .feature {
+  grid-template-columns: repeat(auto auto);
+}
+.gird .feature__image {
+  max-width: 6rem;
 }
 @media screen and (min-width: 768px) {
   .grid--1x2 {
