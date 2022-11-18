@@ -11,37 +11,50 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/Styles.css" />
   </head>
   <body>
-    <section class="block container block-domain">
+    <section class="block container">
       <header class="block__header">
-        <h2>Starting at £10 per month</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, cum.
-        </p>
+        <h3>
+          i-SPEED 7 Series: High-speed cameras for the most demanding
+          applications
+        </h3>
       </header>
-      <!--Search bit-->
-      <div class="input-group">
-        <input type="text" class="input" placeholder="Enter Domain Name Here" />
-        <button class="btn btn--accent">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#search"></use>
-          </svg>
-          Search
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <p>
+            The three models of the i-SPEED 7 Series feature the iX Cameras AST
+            CMOS sensor (Advanced Sensor Technology). This custom 3.2 megapixel
+            sensor is designed, engineered, and manufactured to provide the best
+            possible results for accurate motion analysis. Market-leading
+            performance of 2.45 Mfps, 27.1 GPixels/s throughput makes the
+            i-SPEED 7 Series ideal for PIV, DIC, fluid dynamics, ballistics and
+            a wide range of scientific research.
+          </p>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              images/727_with_CDUe.webp    1x,
+              images/727_with_CDUe@2x.webp 2x
+            "
+          />
+
+          <img class="feature__image" src="images/727_with_CDUe.webp" />
+        </picture>
+        <p></p>
+      </article>
+      <div class="feature__footer">
+        <button class="btn btn--green btn__feature">
+          <a href="#">explore the i-speed 7 series</a>
         </button>
       </div>
-      <!--Proce list-->
-      <ul class="list block-domain__prices">
-        <li>.com £9</li>
-        <li>.sg £10</li>
-        <li>.space £11</li>
-        <li><span class="badge badge--primary">.info £14</span></li>
-        <li>.net £10</li>
-        <li>.xyz £10</li>
-      </ul>
+
+      <!--Articles for the website-->
     </section>
+
     <script src="/js/main.js"></script>
   </body>
 </html>
