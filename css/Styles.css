@@ -431,9 +431,7 @@ a {
 .grid .feature {
   grid-template-columns: repeat(auto auto);
 }
-.gird .feature__image {
-  max-width: 6rem;
-}
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -758,7 +756,7 @@ a {
   margin: 1rem 0;
 }
 .feature__image {
-  width: 100%;
+  width: 75%;
 }
 
 @media screen and (min-width: 768px) {
